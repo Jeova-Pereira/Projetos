@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 if (isset($_POST['idcategoria'])) {
     $id = $_POST['idcategoria'];
 
-    // Verifica se há produtos vinculados a essa categoria
+
     $check = $conn->query("SELECT * FROM produto WHERE categoria_idcategoria = $id");
     if ($check->num_rows > 0) {
         echo "erro_produto_vinculado";

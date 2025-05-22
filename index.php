@@ -14,7 +14,7 @@ $sql = "SELECT p.idproduto, p.nome_produto, p.preco, p.imagem_produto, c.nome_ca
         INNER JOIN categoria c ON p.categoria_idcategoria = c.idcategoria order by rand()";
 $result = $conn->query($sql);
 
-// Consulta para trazer categoria, id e quantidade de produtos por categoria
+
 $sqlCategorias = "
     SELECT 
         c.idcategoria, 
@@ -40,15 +40,15 @@ $resultCategorias = $conn->query($sqlCategorias);
 </head>
 <body>
     <div id="nav">
-        <img id="logo" src="imagens/logo5.png">
+        <img id="logo" src="imagens/logo6.png">
         <div id="divpesquisa">
             <input id="barrapesquisa" placeholder="Pesquisar">
             <div id="divlupa">
-                <img id="lupa" src="imagens/iconlupa.png">
+                <img id="lupa" src="imagens/iconlupa2.png">
             </div>
         </div>
         
-        <img id="logar" src="imagens/logout.png">
+        <img id="logar" src="imagens/logout2.png">
     </div>
     <h1>PRODUTOS</h1>
     <button onclick="adicionar()">Adicionar produto</button>
@@ -105,7 +105,6 @@ $resultCategorias = $conn->query($sqlCategorias);
                 <select id="input_categoria_idcategoria" name="categoria_idcategoria" required>
                     <option value="">Selecione a Categoria</option>
                     <?php
-                    // Recria o resultado para iterar novamente
                     $resultCategorias->data_seek(0);
                     while ($categoria = $resultCategorias->fetch_assoc()) {
                         echo '<option value="' . $categoria['idcategoria'] . '">' . htmlspecialchars($categoria['nome_categoria']) . '</option>';

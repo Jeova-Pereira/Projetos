@@ -2,7 +2,7 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background: #1e2a38; /* fundo escuro */
+    background: #1e2a38;
     color: #f1f1f1;
     overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
@@ -11,7 +11,7 @@ html, body {
 h1 {
     text-align: center;
     margin-top: 30px;
-    color: #ffb347; /* laranja */
+    color: #ffb347;
     font-size: 2.5em;
 }
 
@@ -19,7 +19,7 @@ button {
     margin: 15px auto;
     padding: 12px 20px;
     border: none;
-    background-color: #ff7043; /* laranja escuro */
+    background-color: #ff7043; 
     color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -198,6 +198,7 @@ input:focus {
     border: solid 1px #444;
     border-radius: 0px 10ch 10ch 0px;
     background-color: #607d8b;
+    padding: 0px 10px 0px 5px;
 }
 
 #lupa {
@@ -213,4 +214,8 @@ input:focus {
     background-color: white;
     color: black;
     padding-inline: 10px;
+}
+
+img:hover{
+    cursor: pointer;
 }

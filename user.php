@@ -25,15 +25,15 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div id="nav">
-        <img id="logo" src="imagens/logo5.png">
+        <img id="logo" src="imagens/logo6.png">
         <div id="divpesquisa">
             <input id="barrapesquisa" placeholder="Pesquisar">
             <div id="divlupa">
-                <img id="lupa" src="imagens/iconlupa.png">
+                <img id="lupa" src="imagens/iconlupa2.png">
             </div>
         </div>
         
-        <img id="logar" src="imagens/iconlogin.png">
+        <img id="logar" src="imagens/iconlogin2.png">
     </div>
     <h1>PRODUTOS</h1>
 
