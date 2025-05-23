@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="calculadora">
+        <div class="divinput">
+            <input type="text" id="input">
+        </div>
+        <div class="linha">
+            <div class="divbutton"><button onclick="expressao(7)">7</button></div>
+            <div class="divbutton"><button onclick="expressao(8)">8</button></div>
+            <div class="divbutton"><button onclick="expressao(9)">9</button></div>
+            <div class="divbutton"><button onclick="limpar()" id="buttonreset">c</button></div>
+        </div>
+        <div class="linha">
+            <div class="divbutton"><button onclick="expressao(4)">4</button></div>
+            <div class="divbutton"><button onclick="expressao(5)">5</button></div>
+            <div class="divbutton"><button onclick="expressao(6)">6</button></div>
+            <div class="divbutton"><button onclick="expressao('x')">x</button></div>
+        </div>
+        <div class="linha">
+            <div class="divbutton"><button onclick="expressao(1)">1</button></div>
+            <div class="divbutton"><button onclick="expressao(2)">2</button></div>
+            <div class="divbutton"><button onclick="expressao(3)">3</button></div>
+            <div class="divbutton"><button onclick="expressao('-')">-</button></div>
+        </div>
+        <div class="linha">
+            <div class="divbutton"><button onclick="expressao(0)">0</button></div>
+            <div class="divbutton"><button onclick="expressao('/')">/</button></div>
+            <div class="divbutton"><button onclick="calcular()">=</button></div>
+            <div class="divbutton"><button onclick="expressao('+')">+</button></div>
+        </div>
+    </div>
+</body>
+</html>
